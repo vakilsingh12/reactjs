@@ -1,0 +1,23 @@
+{
+  "name": "namastereact",
+  "version": "1.0.0",
+  "description": "my new react app",
+  "default": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [
+    "namaste",
+    "react",
+    "app"
+  ],
+  "author": "Vakil",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
+  }
+}
