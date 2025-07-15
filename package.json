@@ -4,7 +4,9 @@
   "description": "my new react app",
   "default": "app.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "keywords": [
     "namaste",
@@ -14,10 +16,15 @@
   "author": "Vakil",
   "license": "ISC",
   "devDependencies": {
+    "@babel/core": "^7.27.4",
+    "babel-plugin-transform-remove-console": "^6.9.4",
     "parcel": "^2.15.2"
   },
   "dependencies": {
     "react": "^19.1.0",
     "react-dom": "^19.1.0"
-  }
+  },
+  "browserslist": [
+    "last 10  versions"
+  ]
 }
