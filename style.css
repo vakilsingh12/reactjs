@@ -36,3 +36,9 @@
   flex-wrap: wrap;
   justify-content: center;
 }
+.card:hover{
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(136, 62, 62, 0.2);
+  transform: translateY(-5px);
+}

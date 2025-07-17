@@ -544,7 +544,7 @@ const Body = () => {
   return (
     <div className="restrauntList">
       {restrauntList.map((restraunt, index) => (
-        <RestrauntCard restraunt={restraunt?.info} key={index} />
+        <RestrauntCard restraunt={restraunt?.info} key={restraunt?.info?.id} />
       ))}
     </div>
   );
