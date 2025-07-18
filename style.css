@@ -42,3 +42,6 @@
   box-shadow: 0px 2px 10px rgba(136, 62, 62, 0.2);
   transform: translateY(-5px);
 }
+.search-container {
+  margin: 20px 30px;
+}
