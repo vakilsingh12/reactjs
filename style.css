@@ -45,3 +45,11 @@
 .search-container {
   margin: 20px 30px;
 }
+.search-container input, .search-btn{
+  padding: 8px 10px;
+  background-color: #f0f0f0;
+  margin-right: 10px;
+}
+.search-btn{
+  cursor: pointer;
+}
