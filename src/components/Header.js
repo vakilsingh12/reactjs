@@ -1,4 +1,10 @@
+import { useState } from "react";
+
 const Header = () => {
+  const [login, setLogin] = useState(true);
+  const HandleLogin = () => {
+    setLogin(!login);
+  };
   return (
     <div className="nav-list">
       <div>
@@ -16,6 +22,11 @@ const Header = () => {
           <li>About</li>
           <li>Contact</li>
           <li>Cart</li>
+          <li>
+            <button onClick={HandleLogin}>
+              {login ? "Login" : "Logout"}
+            </button>
+          </li>
         </ul>
       </div>
     </div>

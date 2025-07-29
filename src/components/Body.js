@@ -17,7 +17,7 @@ const Body = () => {
   };
   useEffect(() => {
     fetchRestaurantList();
-  }, []);
+  },[]);
   const fetchRestaurantList = async () => {
     const data = await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.971599&lng=77.594566&page_type=DESKTOP_WEB_LISTING"
@@ -34,9 +34,10 @@ const Body = () => {
     );
   };
   console.log("render body");
+  if (!restruntList) return null;
   return (
     <>
-      {restruntFilterList.length === 0 ? (
+      {restruntList.length === 0 ? (
         <Shimmer />
       ) : (
         <>
@@ -57,12 +58,16 @@ const Body = () => {
             </button>
           </div>
           <div className="restrauntList">
-            {restruntFilterList.map((restraunt) => (
-              <RestrauntCard
-                restraunt={restraunt?.info}
-                key={restraunt?.info?.id}
-              />
-            ))}
+            {restruntFilterList.length == 0 ? (
+              <h1>No Data Found</h1>
+            ) : (
+              restruntFilterList.map((restraunt) => (
+                <RestrauntCard
+                  restraunt={restraunt?.info}
+                  key={restraunt?.info?.id}
+                />
+              ))
+            )}
           </div>
         </>
       )}

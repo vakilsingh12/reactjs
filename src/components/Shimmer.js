@@ -2,19 +2,12 @@ import React from "react";
 
 const Shimmer = () => {
   return (
-    <div>
+    <div className="shimmer-parent">
       {Array(20)
         .fill("")
         .map(() => {
-          return (
-            <div className="restrauntList" key={Math.random()}>
-              <div className="card">
-                <div className="shimmer-image"></div>
-                <div className="shimmer-text"></div>
-              </div>
-            </div>
-          );
-        })}
+          return <div className="shimmer-child" key={Math.random()}></div>;
+        })} 
     </div>
   );
 };
