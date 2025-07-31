@@ -2,7 +2,7 @@ import React from "react";
 
 const Shimmer = () => {
   return (
-    <div className="shimmer-parent">
+    <div className="restrauntList">
       {Array(20)
         .fill("")
         .map(() => {

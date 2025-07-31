@@ -58,12 +58,6 @@ button {
   padding: 2px 7px;
   cursor: pointer;
 }
-.shimmer-parent {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 90px;
-}
 .shimmer-child {
   width: 350px;
   height: 440px;
