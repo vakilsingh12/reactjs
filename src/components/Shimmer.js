@@ -5,8 +5,8 @@ const Shimmer = () => {
     <div className="restrauntList">
       {Array(20)
         .fill("")
-        .map(() => {
-          return <div className="shimmer-child" key={Math.random()}></div>;
+        .map((e,index) => {
+          return <div className="shimmer-child" key={`shimmer_${index}`}></div>;
         })} 
     </div>
   );

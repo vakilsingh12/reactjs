@@ -18,14 +18,16 @@ const Header = () => {
       </div>
       <div>
         <ul className="nav-items">
-          <li>Home</li>
-          <li>About</li>
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
           <li>Contact</li>
           <li>Cart</li>
           <li>
-            <button onClick={HandleLogin}>
-              {login ? "Login" : "Logout"}
-            </button>
+            <button onClick={HandleLogin}>{login ? "Login" : "Logout"}</button>
           </li>
         </ul>
       </div>
