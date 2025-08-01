@@ -10,8 +10,6 @@ const Footer = () => {
         background:black;
         padding:10px;
         color:white;
-        position: relative;
-        bottom:0;
         }
           h1 {
             text-align: center;
