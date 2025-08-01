@@ -1,5 +1,5 @@
 import { useState } from "react";
-
+import { Link } from "react-router";
 const Header = () => {
   const [login, setLogin] = useState(true);
   const HandleLogin = () => {
@@ -8,21 +8,21 @@ const Header = () => {
   return (
     <div className="nav-list">
       <div>
-        <a href="/">
+        <Link to="/">
           <img
             src="https://lh3.googleusercontent.com/Em7AHf7XBH_RtGfCBVXz9RH8SM_pHkj3xPP-yd3cRguY1_Jc8fmqgx6WxnvGVyPV5xs5gL3HCD0FCuv6Xo4CwoY6ak4"
             alt="logo"
             className="logo"
           />
-        </a>
+        </Link>
       </div>
       <div>
         <ul className="nav-items">
           <li>
-            <a href="/">Home</a>
+            <Link to="/">Home</Link>
           </li>
           <li>
-            <a href="/about">About</a>
+            <Link to="/about">About</Link>
           </li>
           <li>Contact</li>
           <li>Cart</li>

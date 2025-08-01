@@ -65,3 +65,7 @@ button {
   margin: 10px;
   padding: 10px;
 }
+.nav-items a {
+  color: black;
+  text-decoration: none;
+}
